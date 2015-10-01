@@ -30,8 +30,11 @@ var usersResponse = usersResponse.toLowerCase();
         alert("Sorry, I must have the wrong person, Goodbye!")
     }
 
-//output boolean, number, and string variables to console
+//console output for boolean variable
+console.log("The fact my name is Justin Pavan is " + booleanValue);
 
-console.log("A boolean value can = " + booleanValue);
+//console output for number variable
 console.log("I have served " + armyYears + " years in the Army.");
+
+//console output for string variable
 console.log("I am currently studying Mobile Development at " + schoolName);
