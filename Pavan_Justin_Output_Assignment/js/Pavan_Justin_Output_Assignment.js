@@ -32,6 +32,6 @@ var usersResponse = usersResponse.toLowerCase();
 
 //output boolean, number, and string variables to console
 
-console.log("A boolean value = " + booleanValue);
+console.log("A boolean value can = " + booleanValue);
 console.log("I have served " + armyYears + " years in the Army.");
 console.log("I am currently studying Mobile Development at " + schoolName);
