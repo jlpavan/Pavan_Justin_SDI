@@ -20,11 +20,9 @@
 
 //comparing the conditions of booleanValue to usersName to determine response
     if(booleanValue == usersResponse){
-        alert("Hi Professor, let me tell you about myself. I am currently in the Army. " +
-            "\nI have been in the Army for ," + armyYears
-            ". I enrolled at " + schoolName +
+        alert("Hi Professor, let me tell you about myself. I am currently in the Army.\nI have been in the Army for ," + armyYears + "years.I enrolled at " + schoolName +
             " \nbecause I wanted to learn Mobile Development. I am very Excited to be in your class!")
     }else{
-        alert("Sorry, I must have the wrong person, Goodbye!");
+        alert("Sorry, I must have the wrong person, Goodbye!")
     }
 
