@@ -16,7 +16,7 @@
     var usersName = prompt("Hello, my name is Justin Pavan. What is your name?");
 
 
-//prompt for a a string variable to compare to booleanValue
+//prompt for a a string variable to compare to condition
     var usersResponse = prompt("Hello " + usersName + ", Are you my instructor? Answer Yes or No");
 
 //setting usersResponse to be lower case so the variable will always work with the future condition
