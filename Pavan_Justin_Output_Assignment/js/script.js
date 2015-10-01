@@ -16,13 +16,15 @@
     var usersName = prompt("Hello, my name is Justin Pavan. What is your name?");
 
 //prompt for a a string variable to compare to booleanValue
-    var userResponse = prompt("Hello " + usersName + ", Are you my instructor?");
+    var usersResponse = prompt("Hello " + usersName + ", Are you my instructor?");
 
 //comparing the conditions of booleanValue to usersName to determine response
-    if(booleanValue == usersResponse) {
+    if(booleanValue == usersResponse){
         alert("Hi Professor, let me tell you about myself. I am currently in the Army. " +
             "\nI have been in the Army for ," + armyYears
-        ". I enrolled at " + schoolName +
-        " \nbecause I wanted to learn Mobile Development. I am very Excited to be in your class!"
+            ". I enrolled at " + schoolName +
+            " \nbecause I wanted to learn Mobile Development. I am very Excited to be in your class!")
+    }else{
+        alert("Sorry, I must have the wrong person, Goodbye!");
     }
 
