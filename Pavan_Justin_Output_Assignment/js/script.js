@@ -19,15 +19,19 @@
 //prompt for a a string variable to compare to booleanValue
     var usersResponse = prompt("Hello " + usersName + ", Are you my instructor? Answer Yes or No");
 
-//setting usersResponse to be lower case.
+//setting usersResponse to be lower case so the variable will always work with the future condition
 var usersResponse = usersResponse.toLowerCase();
 
 //comparing the conditions of booleanValue to usersName to determine response
     if(usersResponse == "yes"){
         alert("Hi Professor, let me tell you about myself. I am currently in the Army.I have been in the Army for " + armyYears + "years. I enrolled at " + schoolName +
             " because I wanted to learn Mobile Development. I am very excited to be in your class!")
-    }else{
+    }else {
         alert("Sorry, I must have the wrong person, Goodbye!")
     }
 
+//output boolean, number, and string variables to console
 
+console.log("A boolean value = " + booleanValue);
+console.log("I have served " + armyYears + " years in the Army.");
+console.log("I am currently studying Mobile Development at " + schoolName);
