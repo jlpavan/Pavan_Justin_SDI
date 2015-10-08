@@ -25,6 +25,7 @@ weight *= myCalculations[0];//converting weight to kilograms
 height *= myCalculations[1];//converting height to meters
 height *= height;//multiplying height to itself
 bmi = weight / height; //dividing weight by height to get bmi
+bmi = bmi.toFixed();
 
 //converting sex to a number value
 
@@ -42,6 +43,7 @@ if(sex == "female") {
 //Calculations for Body fat percentage
 
 var bodyFat =  myCalculations[2] * bmi + myCalculations[3] * age - myCalculations[4] * sex - myCalculations[5];
+bodyFat = bodyFat.toFixed();
 
 //alert to the user his or her results
 var results = ("Your body fat percentage is " + bodyFat + " and have a BMI of " + bmi+".");
