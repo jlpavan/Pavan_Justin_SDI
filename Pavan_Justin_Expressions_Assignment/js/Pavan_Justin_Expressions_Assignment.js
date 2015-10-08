@@ -46,7 +46,7 @@ var bodyFat =  myCalculations[2] * bmi + myCalculations[3] * age - myCalculation
 bodyFat = bodyFat.toFixed();
 
 //alert to the user his or her results
-var results = ("Your body fat percentage is " + bodyFat + " and have a BMI of " + bmi+".");
+var results = ("Your body fat percentage is " + bodyFat + "% and have a BMI of " + bmi+".");
 alert(results);
 
 //console log the user's results
