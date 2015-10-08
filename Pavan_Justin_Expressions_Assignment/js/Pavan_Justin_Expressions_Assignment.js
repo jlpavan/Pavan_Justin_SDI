@@ -16,14 +16,17 @@ var femaleAllowedBFP = [30,32,34,36]; //allowable female body fat percentage for
 
 var sex = prompt("Are you Male or Female?"); //prompting for user input on sex to determine how to calculate
 var age = prompt("How old are you?"); //prompting for user input on age to determin how to calculate
-var height = prompt("How tall are you in inches? Please round to the nearest half inch."); // prompting for height to calculate
-var weight = prompt("How much do you weight in pounds?"); // prompting for user's weight to calculate
+var height = prompt("How tall are you in inches?\n Please round to the nearest half inch."); // prompting for height to calculate
+var neckCircum = prompt("What is the circumference of your neck?\nPlease round to the nearest half inch.");
+var abCircum = prompt("What is circumference of your abdominal?\nPlease round to the nearest half inch.")
 
 // Adjusting values to prepare to for calculations
 
 sex = sex.toLowerCase(); //reassigning the value of sex so that the string will be consistent after the user inputs value
 age = Number(age); //casting the variable age into a number
 height = Number(height); // casting the variable height into a number
-weight = Number(weight); // casting the variable weight into a number
+neckCircum = Number(neckCircum); // casting the variable neckCircum into a number
+abCircum = Number(abCircum); //casting the variable abCicum into a number
+//calculations for user's circumference value
 
-
+var circumValue =
