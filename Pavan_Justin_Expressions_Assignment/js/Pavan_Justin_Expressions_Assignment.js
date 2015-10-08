@@ -24,9 +24,8 @@ bmi = weight / height; //dividing weight by height to get bmi
 
 sex = sex.toLowerCase(); //Converting sex to all lower case for more accurate calculations
 
-if(sex !== "male" || sex !== "female"){
-    alert("You did not select a valid gender. Please refresh the page and try again.");// comparing sex to determine valid response
-}
+if(sex !== "male" && sex !== "female"){
+    alert("You did not select a valid gender. Please refresh the page and try again.")}
 if(sex == "male"){
     sex = 1;//setting sex to 1 in the case of male for calculations
 }
@@ -34,8 +33,6 @@ if(sex == "female") {
     sex = 0;// setting sex to 0 in the case of female for calculations
 }
 
-
-
-
+console.log(sex);
 
 
