@@ -18,3 +18,12 @@ var sex = prompt("Are you Male or Female?"); //prompting for user input on sex t
 var age = prompt("How old are you?"); //prompting for user input on age to determin how to calculate
 var height = prompt("How tall are you in inches? Please round to the nearest half inch."); // prompting for height to calculate
 var weight = prompt("How much do you weight in pounds?"); // prompting for user's weight to calculate
+
+// Adjusting values to prepare to for calculations
+
+sex = sex.toLowerCase(); //reassigning the value of sex so that the string will be consistent after the user inputs value
+age = Number(age); //casting the variable age into a number
+height = Number(height); // casting the variable height into a number
+weight = Number(weight); // casting the variable weight into a number
+
+
