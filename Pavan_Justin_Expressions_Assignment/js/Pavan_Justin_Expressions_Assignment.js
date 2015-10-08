@@ -43,6 +43,9 @@ if(sex == "female") {
 
 var bodyFat =  myCalculations[2] * bmi + myCalculations[3] * age - myCalculations[4] * sex - myCalculations[5];
 
+//alert to the user his or her results
+var results = ("Your body fat percentage is " + bodyFat + " and have a BMI of " + bmi+".");
+alert(results);
 
-
-
+//console log the user's results
+console.log(results);
