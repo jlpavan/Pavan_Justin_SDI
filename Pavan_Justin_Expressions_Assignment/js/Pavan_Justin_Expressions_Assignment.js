@@ -8,7 +8,7 @@
 
 
 //variables used to complete the program
-var myCalculations = [.45,.025,1.20,.23,10.8]; //the various numbers needed for BMI and body fat calculations
+var myCalculations = [.45,.025,1.20,.23,10.8,5.4]; //the various numbers needed for BMI and body fat calculations
 var sex = prompt("Are you Male or female?");//necessary for determining calculation for BF%
 var age = prompt("How old are you?");//necessary for determining calculations for BF%
 var height = prompt("How tall are you in inches?");//necessary for determining BMI
@@ -33,6 +33,10 @@ if(sex == "female") {
     sex = 0;// setting sex to 0 in the case of female for calculations
 }
 
-console.log(sex);
+//Calculations for Body fat percentage
+
+var bodyFat =  myCalculations[2] * bmi + myCalculations[3] * age - myCalculations[4] * sex - myCalculations[5];
+
+
 
 
