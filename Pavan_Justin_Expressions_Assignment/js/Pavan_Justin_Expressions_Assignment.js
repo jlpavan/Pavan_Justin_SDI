@@ -3,12 +3,15 @@
  * 10/08/2015
  * Expressions Assignment
  *
- * This program is used to calculate an adults body fat % using bmi, age, and gender.
+ * This program is used to calculate an adults body fat % using bmi, age, and gender. The formula for BMI and BF% are;
+ * BMI = weight * .45 /(height * .025)^2
+ * BF% = (1.20 x BMI) + (0.23 x Age) – (10.8 x gender) – 5.4
  */
 
 
 //variables used to complete the program
 var myCalculations = [.45,.025,1.20,.23,10.8,5.4]; //the various numbers needed for BMI and body fat calculations
+
 var sex = prompt("Are you Male or female?");//necessary for determining calculation for BF%
 
 //converting sex to a number value
@@ -54,3 +57,9 @@ alert(results);
 
 //console log the user's results
 console.log(results);
+
+/**To test my program I put in these values
+ * response 1 = MaLE, 27, 74, 212 (Program worked as expected.
+ * response 2 = FMSD, (was notified that I input an invalid response and to refresh the page. Like expected
+ * response 3 = FeMALe, 22, 60, 145. program worked as expected.
+ */
