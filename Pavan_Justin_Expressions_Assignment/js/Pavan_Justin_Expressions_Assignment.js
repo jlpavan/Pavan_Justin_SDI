@@ -14,6 +14,12 @@ var age = prompt("How old are you?");//necessary for determining calculations fo
 var height = prompt("How tall are you in inches?");//necessary for determining BMI
 var weight = prompt("How much do you weight in pounds?");//necessary for determining BMI
 
+//Converting variables age, height, and weight to numbers
+
+age = Number(age);// converted so i can us it to calculate body fat %
+height = Number(height);//converted so i can us it to calculate body fat %
+weight = Number(weight);//converted so i can us it to calculate body fat %
+
 //calculations for BMI
 weight *= myCalculations[0];//converting weight to kilograms
 height *= myCalculations[1];//converting height to meters
