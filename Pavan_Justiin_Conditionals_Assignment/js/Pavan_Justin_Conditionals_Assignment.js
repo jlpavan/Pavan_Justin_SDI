@@ -32,8 +32,8 @@ var boxHeight = prompt("What is the height of your box in inches?"); //User's in
 boxHeight = Number(boxHeight);//converting boxHeight from a string to a number variabl.
 
 //Validating that the variable boxLength is a number variable with no string variables
-while(isNaN(boxWidth)){
-    boxWidth = prompt("You did not enter a valid number. Please try again?");//asking the user to insert another value
+while(isNaN(boxHeight)){
+    boxHeight = prompt("You did not enter a valid number. Please try again?");//asking the user to insert another value
 }
 
 
