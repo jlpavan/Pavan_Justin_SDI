@@ -59,7 +59,10 @@ if(boxVolume <= containVolume){
     }
 }else if(boxVolume > containVolume){
     alert(allowedBox + " You might want to revert to smaller boxes. ");//else if the box is too big to fit into the container
-    
+
+}else{
+    alert("There is a problem processing your request, please refresh the page and try again. Thank you.");
 }
+
 
 
