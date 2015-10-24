@@ -38,7 +38,7 @@ if(gameDecision == "no"){
 
 gameName = gameName.toLowerCase();
 
-while(gameName != "powerball" && gameDecision != "florida"){
+while(gameName !== "powerball" && gameName !== "florida"){
     gameName = prompt("You did not enter a valid response.\n\nPlease enter Powerball or Florida.");
     gameName = gameName.toLowerCase();
 }
@@ -55,7 +55,7 @@ if(gameName == "powerball") {
     }
 }else{
 
-    gameTicket = gameNumbers(1.53);
+    gameTicket = gameNumbers(1,53);
 
     while (gameTicket[0] == gameTicket[1] || gameTicket[0] == gameTicket[2] || gameTicket[0] == gameTicket[3] || gameTicket[0] == gameTicket[4]
     || gameTicket[0] == gameTicket[5] || gameTicket[0] == gameTicket[6] || gameTicket[1] == gameTicket[2] || gameTicket[1] == gameTicket[3] ||
@@ -68,6 +68,8 @@ if(gameName == "powerball") {
     }
 
 }
+
+alert(gameTicket);
 
 
 
