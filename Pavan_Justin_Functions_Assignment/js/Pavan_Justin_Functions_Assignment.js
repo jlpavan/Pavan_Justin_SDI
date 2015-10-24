@@ -4,7 +4,6 @@
  * Functions Assignment
  */
 //Functions
-
 function gameNumbers(min, max) {
     var randomNumber = [];
 
@@ -21,7 +20,7 @@ while(player === ""){
     player = prompt("You did not enter your name.\n\nPlease enter name below.");
 }
 
-var gameDecision = prompt("Hi " + player + " Would you like to play the Powerball or the Florida Lottery?\n\nPlease answer Yes or No.");
+var gameDecision = prompt("Hi " + player + ", Would you like to play the Powerball or the Florida Lottery?\n\nPlease answer Yes or No.");
 
 gameDecision = gameDecision.toLowerCase();
 
@@ -69,7 +68,12 @@ if(gameName == "powerball") {
 
 }
 
-alert(gameTicket);
+console.log("Okay " + player + ", Your " + gameName + " Lottery numbers are " + gameTicket + ". Good Luck!");
+
+alert("Okay " + player + ", Your " + gameName + " Lottery numbers are " + gameTicket + ". Good Luck!");
+
+
+
 
 
 
