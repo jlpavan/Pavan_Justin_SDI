@@ -43,9 +43,31 @@ while(gameName != "powerball" && gameDecision != "florida"){
     gameName = gameName.toLowerCase();
 }
 
-if(gameName == "powerball"){
-    gameNumbers = gameNumbers(1,35);
+if(gameName == "powerball") {
+    var gameTicket = gameNumbers(1, 35);
+
+    while (gameTicket[0] == gameTicket[1] || gameTicket[0] == gameTicket[2] || gameTicket[0] == gameTicket[3] || gameTicket[0] == gameTicket[4]
+    || gameTicket[0] == gameTicket[5] || gameTicket[1] == gameTicket[2] || gameTicket[1] == gameTicket[3] || gameTicket[1] == gameTicket[4] ||
+    gameTicket[1] == gameTicket[5] || gameTicket[2] == gameTicket[3] || gameTicket[2] == gameTicket[4] || gameTicket[2] == gameTicket[5] ||
+    gameTicket[1] == gameTicket[5] || gameTicket[3] == gameTicket[4] || gameTicket[3] == gameTicket[5] || gameTicket[4] == gameTicket[5]) {
+
+        gameTicket = gameNumbers(1, 35);
+    }
+}else{
+
+    gameTicket = gameNumbers(1.53);
+
+    while (gameTicket[0] == gameTicket[1] || gameTicket[0] == gameTicket[2] || gameTicket[0] == gameTicket[3] || gameTicket[0] == gameTicket[4]
+    || gameTicket[0] == gameTicket[5] || gameTicket[0] == gameTicket[6] || gameTicket[1] == gameTicket[2] || gameTicket[1] == gameTicket[3] ||
+    gameTicket[1] == gameTicket[4] || gameTicket[1] == gameTicket[5] || gameTicket[1] == gameTicket[6] || gameTicket[2] == gameTicket[3] ||
+    gameTicket[2] == gameTicket[4] || gameTicket[2] == gameTicket[5] || gameTicket[2] == gameTicket[6] || gameTicket[3] == gameTicket[4] ||
+    gameTicket[3] == gameTicket[5] || gameTicket[3] == gameTicket[6] || gameTicket[4] == gameTicket[5] || gameTicket[4] == gameTicket[6] ||
+    gameTicket[5] == gameTicket[6]) {
+
+        gameTicket = gameNumbers(1,53);
+    }
 
 }
+
 
 
