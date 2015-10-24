@@ -3,7 +3,17 @@
  * 10/24/15.
  * Functions Assignment
  */
+//Functions
 
+function gameNumbers(min, max) {
+    var randomNumber = [];
+
+    for (var i = 0; i < 5; i++){
+        randomNumber[i] = Math.random()* (max - min) + min;
+        randomNumber[i] = Math.round(randomNumber[i]);
+    }
+    return randomNumber;
+}
 //Variables
 var player = prompt("Hello, What is your name?");
 
@@ -26,3 +36,8 @@ if(gameDecision == "no"){
 }
 
 gameName = gameName.toLowerCase();
+
+while(gameName !== "powerball" && gameDecision !== "florida"){
+    gameName = prompt("You did not enter a valid response.\n\nPlease enter Powerball or Florida.");
+}
+
